@@ -172,3 +172,7 @@ describe('Integration Testing', () => {
 ```
 ![Captura](https://user-images.githubusercontent.com/7141537/172492101-bcb3c386-3a38-412e-9a6c-5cde4e4d3f17.PNG)
 
+## Reporte de covertura
+** > $ ng test --code-coverage
+![Captura](https://user-images.githubusercontent.com/7141537/172493739-125fca53-ed17-4a80-86ec-ffb791ab3d0d.PNG)
+![Captura1](https://user-images.githubusercontent.com/7141537/172493742-dc308584-5d16-4b2a-a8ee-90043581885e.PNG)

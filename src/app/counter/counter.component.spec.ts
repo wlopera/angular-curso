@@ -1,8 +1,10 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CounterComponent } from './counter.component';
+import { ButtonAddComponent } from './button-add/button-add.component';
+import { ButtonDecreaseComponent } from './button-decrease/button-decrease.component';
 
-describe('CounterComponent', () => {
+describe('CounterComponent Unit Testing', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [CounterComponent],
@@ -28,5 +30,56 @@ describe('CounterComponent', () => {
   it('Valor inicial del contador es 25', () => {
     const counter = new CounterComponent();
     expect(counter.counter).toBe(25);
+  });
+});
+
+describe('Integration Testing', () => {
+  let component: CounterComponent;
+  let fixture: ComponentFixture<CounterComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [
+        CounterComponent,
+        ButtonAddComponent,
+        ButtonDecreaseComponent,
+      ],
+    }).compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(CounterComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('Evento click ADD', () => {
+    const compiled: HTMLElement = fixture.nativeElement; // render -> trae el DOM
+    console.log('Para ver evento click:', compiled);
+
+    const btnAdd: HTMLElement =
+      fixture.debugElement.nativeElement.querySelector('#add');
+
+    btnAdd.click();
+    fixture.detectChanges();
+
+    const counterValue = compiled.querySelector('h1')!;
+
+    expect(counterValue?.textContent).toEqual('Contador: 26');
+  });
+
+  it('Evento click DECREASE', () => {
+    const compiled: HTMLElement = fixture.nativeElement; // renderisar -> trae el DOM
+
+    const btnDecrease: HTMLElement =
+      fixture.debugElement.nativeElement.querySelector('#decrease');
+
+    btnDecrease.click();
+    btnDecrease.click();
+    fixture.detectChanges();
+
+    const counterValue = compiled.querySelector('h1')!;
+
+    expect(counterValue?.textContent).toEqual('Contador: 23');
   });
 });

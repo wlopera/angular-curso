@@ -107,3 +107,68 @@ describe('CounterComponent', () => {
 ```
 ![Captura2](https://user-images.githubusercontent.com/7141537/172474923-b8ecccb1-94de-4ba0-9f9c-44a9f18b0831.PNG)
 
+* Pruebas: AngularDesdeCero\contador\src\app\counter\counter.component.spec.ts
+
+```
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { CounterComponent } from './counter.component';
+import { ButtonAddComponent } from './button-add/button-add.component';
+import { ButtonDecreaseComponent } from './button-decrease/button-decrease.component';
+
+describe('CounterComponent Unit Testing', () => {
+});
+
+describe('Integration Testing', () => {
+  let component: CounterComponent;
+  let fixture: ComponentFixture<CounterComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [
+        CounterComponent,
+        ButtonAddComponent,
+        ButtonDecreaseComponent,
+      ],
+    }).compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(CounterComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('Evento click ADD', () => {
+    const compiled: HTMLElement = fixture.nativeElement; // render -> trae el DOM
+    console.log('Para ver evento click:', compiled);
+
+    const btnAdd: HTMLElement =
+      fixture.debugElement.nativeElement.querySelector('#add');
+
+    btnAdd.click();
+    fixture.detectChanges();
+
+    const counterValue = compiled.querySelector('h1')!;
+
+    expect(counterValue?.textContent).toEqual('Contador: 26');
+  });
+
+  it('Evento click DECREASE', () => {
+    const compiled: HTMLElement = fixture.nativeElement; // renderisar -> trae el DOM
+
+    const btnDecrease: HTMLElement =
+      fixture.debugElement.nativeElement.querySelector('#decrease');
+
+    btnDecrease.click();
+    btnDecrease.click();
+    fixture.detectChanges();
+
+    const counterValue = compiled.querySelector('h1')!;
+
+    expect(counterValue?.textContent).toEqual('Contador: 23');
+  });
+});
+```
+![Captura](https://user-images.githubusercontent.com/7141537/172492101-bcb3c386-3a38-412e-9a6c-5cde4e4d3f17.PNG)
+

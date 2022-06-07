@@ -38,34 +38,3 @@ describe('ButtonAddComponent', () => {
     expect(newCounter).toBe(1);
   });
 });
-
-describe('Integration Testing', () => {
-  let component: CounterComponent;
-  let fixture: ComponentFixture<CounterComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [CounterComponent, ButtonAddComponent],
-    }).compileComponents();
-  });
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CounterComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-  it('Evento click', () => {
-    const compiled: HTMLElement = fixture.nativeElement; // renderisa trae el DOM
-    console.log('Para ver evento click:', compiled);
-
-    const btnAdd: HTMLElement =
-      fixture.debugElement.nativeElement.querySelector('#add');
-
-    btnAdd.click();
-    fixture.detectChanges();
-
-    const counterValue = compiled.querySelector('h1')!;
-
-    expect(counterValue?.textContent).toEqual('Contador: 26');
-  });
-});

@@ -54,3 +54,56 @@ describe('ButtonAddComponent', () => {
 ```
 ![Captura1](https://user-images.githubusercontent.com/7141537/172473139-d7389dd0-7d19-4bd3-8c96-55c5d0dea1a1.PNG)
 
+## pruebas de Integración
+
+* AngularDesdeCero\contador\src\app\counter\counter.component.spec.ts
+``` 
+import { TestBed } from '@angular/core/testing';
+
+import { CounterComponent } from './counter.component';
+
+describe('CounterComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [CounterComponent],
+    }).compileComponents();
+  });
+
+  it('Se debe crear el componente Counter', () => {
+    const fixture = TestBed.createComponent(CounterComponent);
+
+    expect(fixture.componentInstance).toBeTruthy();
+  });
+
+  it('Debe crear el texto Contador: 25', () => {
+    const fixture = TestBed.createComponent(CounterComponent);
+    fixture.detectChanges(); // Validar si algo cambio (renderizado)
+
+    const compiled: HTMLElement = fixture.nativeElement;
+
+    console.log('Valor del Dom que contiene el H1', compiled);
+    expect(compiled.querySelector('h1')?.textContent).toEqual('Contador: 25');
+  });
+
+  it('Valor inicial del contador es 25', () => {
+    const counter = new CounterComponent();
+    expect(counter.counter).toBe(25);
+  });
+});
+```
+![Captura1](https://user-images.githubusercontent.com/7141537/172474916-f0aac92e-85a7-4ed5-bccb-8d4ed9a5c1e9.PNG)
+
+* Modificar AngularDesdeCero\contador\src\app\counter\counter.component.spec.ts
+```diff
+...
+describe('CounterComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
++      declarations: [CounterComponent, ButtonAddComponent],
+    }).compileComponents();
+  });
+ }
+ ...
+```
+![Captura2](https://user-images.githubusercontent.com/7141537/172474923-b8ecccb1-94de-4ba0-9f9c-44a9f18b0831.PNG)
+

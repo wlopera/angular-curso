@@ -68,18 +68,18 @@ describe('Integration Testing', () => {
     expect(counterValue?.textContent).toEqual('Contador: 26');
   });
 
-  // it('Evento click DECREASE', () => {
-  //   const compiled: HTMLElement = fixture.nativeElement; // renderisar -> trae el DOM
+  it('Evento click DECREASE', () => {
+    const compiled: HTMLElement = fixture.nativeElement; // renderisar -> trae el DOM
 
-  //   const btnDecrease: HTMLElement =
-  //     fixture.debugElement.nativeElement.querySelector('#decrease');
+    const btnDecrease: HTMLElement =
+      fixture.debugElement.nativeElement.querySelector('#decrease');
 
-  //   btnDecrease.click();
-  //   btnDecrease.click();
-  //   fixture.detectChanges();
+    btnDecrease.click();
+    btnDecrease.click();
+    fixture.detectChanges();
 
-  //   const counterValue = compiled.querySelector('h1')!;
+    const counterValue = compiled.querySelector('h1')!;
 
-  //   expect(counterValue?.textContent).toEqual('Contador: 23');
-  // });
+    expect(counterValue?.textContent).toEqual('Contador: 23');
+  });
 });

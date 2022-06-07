@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './counter.component.html',
 })
 export class CounterComponent {
-  counter: number = 0;
+  counter: number = 25;
 
   counterHandler = (value: number) => {
     this.counter = value;

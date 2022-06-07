@@ -176,3 +176,27 @@ describe('Integration Testing', () => {
 ** > $ ng test --code-coverage
 ![Captura](https://user-images.githubusercontent.com/7141537/172493739-125fca53-ed17-4a80-86ec-ffb791ab3d0d.PNG)
 ![Captura1](https://user-images.githubusercontent.com/7141537/172493742-dc308584-5d16-4b2a-a8ee-90043581885e.PNG)
+
+## Si comento una validación (No existe)
+* AngularDesdeCero\contador\src\app\counter\counter.component.spec.ts
+```
+  // it('Evento click DECREASE', () => {
+  //   const compiled: HTMLElement = fixture.nativeElement; // renderisar -> trae el DOM
+
+  //   const btnDecrease: HTMLElement =
+  //     fixture.debugElement.nativeElement.querySelector('#decrease');
+
+  //   btnDecrease.click();
+  //   btnDecrease.click();
+  //   fixture.detectChanges();
+
+  //   const counterValue = compiled.querySelector('h1')!;
+
+  //   expect(counterValue?.textContent).toEqual('Contador: 23');
+  // });
+});
+``` 
+![Captura](https://user-images.githubusercontent.com/7141537/172495635-5151e1f9-f048-44f0-9649-74a02af9edc9.PNG)
+![Captura22](https://user-images.githubusercontent.com/7141537/172495632-1b9c48c1-09e9-4008-b60d-1fc9fa3fa8f3.PNG)
+![Captura1](https://user-images.githubusercontent.com/7141537/172495637-df3b5a7f-d54f-4463-a177-bf9e7afb6480.PNG)
+![Captura3](https://user-images.githubusercontent.com/7141537/172495631-34bcc86c-e559-4fe8-a483-393c962d2e82.PNG)

@@ -224,5 +224,65 @@ describe('Integration Testing', () => {
 ![Captura](https://user-images.githubusercontent.com/7141537/172659450-ad942d77-8340-4947-b58e-a90d0c420fbc.PNG)
 ![Captura1](https://user-images.githubusercontent.com/7141537/172659462-b6cbe4d7-d16c-4c93-8fe9-fdd146dbe000.PNG)
 
+## Actualizar la version de Angular
+```
+$ ng help
+ng <command>
+
+Commands:
+  ng add <collection>            Adds support for an external library to your project.
+  ng analytics                   Configures the gathering of Angular CLI usage metrics. See https://angular.io/cli/usage-analytics-gathering
+  ng build [project]             Compiles an Angular application or library into an output directory named dist/ at the given output path.  [aliases: b]
+  ng cache                       Configure persistent disk cache and retrieve cache statistics.
+  ng completion                  Set up Angular CLI autocompletion for your terminal.
+  ng config [json-path] [value]  Retrieves or sets Angular configuration values in the angular.json file for the workspace.
+  ng deploy [project]            Invokes the deploy builder for a specified project or for the default project in the workspace.
+  ng doc <keyword>               Opens the official Angular documentation (angular.io) in a browser, and searches for a given keyword.  [aliases: d]
+  ng e2e [project]               Builds and serves an Angular application, then runs end-to-end tests.  [aliases: e]
+  ng extract-i18n [project]      Extracts i18n messages from source code.
+  ng generate                    Generates and/or modifies files based on a schematic.  [aliases: g]
+  ng lint [project]              Runs linting tools on Angular application code in a given project folder.
+  ng run <target>                Runs an Architect target with an optional custom builder configuration defined in your project.
+  ng serve [project]             Builds and serves your application, rebuilding on file changes.  [aliases: s]
+  ng test [project]              Runs unit tests in a project.  [aliases: t]
+  ng update [packages..]         Updates your workspace and its dependencies. See https://update.angular.io/.
+  ng version                     Outputs Angular CLI version.  [aliases: v]
+
+Options:
+  --help  Shows a help message for this command in the console.  [boolean]
+
+==> ng update [packages..]         Updates your workspace and its dependencies. See https://update.angular.io/.
+
+> ng update ==> Para actualizar todo el package.json
+  - Se despliega una lista con los paquetes a actualizar
+  - Si tiene git debe estar actualizado el repo 
+```
+## PWA: Angular permite trabajar con Service worker (PWA)
+```
+ - Service worker: Archivo de configuración. 
+                  Como gravar en cache
+                  Como se va a actualizar
+                  Verficar hardware
+                  Uso de camara
+                  etc.
+
+ - Subir a un localhost o encriptacion SSL - https. Certificado de seguridad.
+   - Los datos viajan cifrados (encriptados)
+
+ - El navegador debe soportar PWA.
+
+ - Archivo de manifest: Configura íconos, fondos, imágenes, etc.
+
+ Nota: Antes de intalar PWA bajar el server.
+        > npm i @angular/pwa
+        > ng add @angular/pwa
+```
+![Captura1](https://user-images.githubusercontent.com/7141537/172672716-bd443667-d3f5-4ce5-9218-725911cbbc81.PNG)
+![Captura](https://user-images.githubusercontent.com/7141537/172672720-9a2cbd88-a415-4947-a6c1-54e5ef06c363.PNG)
+![Captura](https://user-images.githubusercontent.com/7141537/172673032-ec0f3720-ca54-4894-8b4b-112aaa6adbbf.PNG)
+![Captura2](https://user-images.githubusercontent.com/7141537/172673028-ed866d43-fe8c-4e3f-a653-ff5e341e2c6b.PNG)
+
+* Luego de agregar PWA
+![Captura](https://user-images.githubusercontent.com/7141537/172673227-1597b30d-5bbd-4526-84c9-d37c3b93dfd4.PNG)
 
 

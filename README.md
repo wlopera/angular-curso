@@ -200,3 +200,12 @@ describe('Integration Testing', () => {
 ![Captura22](https://user-images.githubusercontent.com/7141537/172495632-1b9c48c1-09e9-4008-b60d-1fc9fa3fa8f3.PNG)
 ![Captura1](https://user-images.githubusercontent.com/7141537/172495637-df3b5a7f-d54f-4463-a177-bf9e7afb6480.PNG)
 ![Captura3](https://user-images.githubusercontent.com/7141537/172495631-34bcc86c-e559-4fe8-a483-393c962d2e82.PNG)
+
+## Publicar en netlify (Producción)
+![Captura](https://user-images.githubusercontent.com/7141537/172634473-dd36a6e4-3caf-4ace-bde2-2bd4e5d8a34a.PNG)
+![Captura1](https://user-images.githubusercontent.com/7141537/172634478-52fe7954-dc8b-4aad-aa1f-3de724899a88.PNG)
+
+* Subir la carpeta: AngularDesdeCero\contador\dist\contador
+![Captura5](https://user-images.githubusercontent.com/7141537/172634480-afd29d26-b0ac-4661-a078-c79703c0ca9b.PNG)
+![Captura 4PNG](https://user-images.githubusercontent.com/7141537/172634482-80401f1e-0973-4f84-9e44-e8f608a671e3.PNG)
+

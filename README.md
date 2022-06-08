@@ -1,6 +1,6 @@
 # Contador
 
-Proyceto Curo - generado con [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Proyceto Curso - generado con [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 
 ## Development server
 

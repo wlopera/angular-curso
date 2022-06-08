@@ -220,6 +220,9 @@ describe('Integration Testing', () => {
 ![Captura](https://user-images.githubusercontent.com/7141537/172640973-3e0ffe35-f0a1-4cd6-a1ce-bb0d48fa0a36.PNG)
 ![Captura1](https://user-images.githubusercontent.com/7141537/172640971-6bf4a930-f201-4fd7-9a28-d160d4a791d4.PNG)
 
+## Agregar estilos globales e independientes
+![Captura](https://user-images.githubusercontent.com/7141537/172659450-ad942d77-8340-4947-b58e-a90d0c420fbc.PNG)
+![Captura1](https://user-images.githubusercontent.com/7141537/172659462-b6cbe4d7-d16c-4c93-8fe9-fdd146dbe000.PNG)
 
 
 

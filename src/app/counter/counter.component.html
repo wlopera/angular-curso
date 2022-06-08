@@ -1,3 +1,5 @@
 <h1>Contador: {{counter}}</h1>
-<app-button-add [counter]="counter" (onAdd)="counterHandler($event)"></app-button-add>
-<app-button-decrease [counter]="counter" (onDecrease)="counterHandler($event)"></app-button-decrease>
+<div class="container">
+    <app-button-add [counter]="counter" (onAdd)="counterHandler($event)"></app-button-add>
+    <app-button-decrease [counter]="counter" (onDecrease)="counterHandler($event)"></app-button-decrease>
+</div>

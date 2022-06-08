@@ -3,6 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-button-decrease',
   templateUrl: './button-decrease.component.html',
+  styleUrls: ['./button-decrease.component.css'],
 })
 export class ButtonDecreaseComponent {
   @Input()

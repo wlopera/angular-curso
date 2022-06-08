@@ -209,3 +209,20 @@ describe('Integration Testing', () => {
 ![Captura5](https://user-images.githubusercontent.com/7141537/172634480-afd29d26-b0ac-4661-a078-c79703c0ca9b.PNG)
 ![Captura 4PNG](https://user-images.githubusercontent.com/7141537/172634482-80401f1e-0973-4f84-9e44-e8f608a671e3.PNG)
 
+## Estilos
+### Directo en el código
+![Capturaa](https://user-images.githubusercontent.com/7141537/172640593-5bcea56e-c187-400f-a808-7ef4157d179e.PNG)
+![CapturaB](https://user-images.githubusercontent.com/7141537/172640600-9e2b1d23-e7c5-4321-bdcb-6924ad305614.PNG)
+
+### Desde archivo
+### Google Font: Oswald
+![Captura](https://user-images.githubusercontent.com/7141537/172639946-3954daa9-34bf-4a29-a137-4f548e2de714.PNG)
+![Captura](https://user-images.githubusercontent.com/7141537/172640973-3e0ffe35-f0a1-4cd6-a1ce-bb0d48fa0a36.PNG)
+![Captura1](https://user-images.githubusercontent.com/7141537/172640971-6bf4a930-f201-4fd7-9a28-d160d4a791d4.PNG)
+
+## Agregar estilos globales e independientes
+![Captura](https://user-images.githubusercontent.com/7141537/172659450-ad942d77-8340-4947-b58e-a90d0c420fbc.PNG)
+![Captura1](https://user-images.githubusercontent.com/7141537/172659462-b6cbe4d7-d16c-4c93-8fe9-fdd146dbe000.PNG)
+
+
+
